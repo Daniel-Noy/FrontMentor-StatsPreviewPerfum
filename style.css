@@ -63,20 +63,21 @@ figure {
 }
 .card__info .product__type {
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: .8rem;
   font-size: 1.2rem;
 }
 .card__info h2{
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-family: var(--secondary-font);
   color: var(--text-color-dark);
 }
 .card__info .info__desc {
+  font-size: 1.2rem;
   line-height: 2.4rem;
 }
 .card__info .price {
   font-family: var(--secondary-font);
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   color: var(--primary-color);
 }
 .price sup {
@@ -95,7 +96,7 @@ figure {
   padding: 1.4rem;
 
   font-family: var(--main-font);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
 
   color: var(--contrast-color);
