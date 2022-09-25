@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+/* Initial configuration */
+:root {
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Fraunces', serif;
+
+  --background-color: #f2ebe3;
+  --primary-color: #3c8067;
+  --primary-color-dark: #1a4031;
+  --contrast-color: #ffffff;
+
+  --text-color-dark: #1c232b;
+  --text-color: #6c7289;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+}
+figure {
+  margin: 0;
+}
+
+/* Card styles */
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 2rem;
+
+  border-radius: 10px;
+  background-color: var(--contrast-color);
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  background-image: url(./images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card__image img{
+  width: 100%;
+}
+
+.card__info {
+  padding: 2rem 2rem 3rem;
+}
+.card__info .product__type {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 1.2rem;
+}
+.card__info h2{
+  font-size: 2.8rem;
+  font-family: var(--secondary-font);
+  color: var(--text-color-dark);
+}
+.card__info .info__desc {
+  line-height: 2.4rem;
+}
+.card__info .price {
+  font-family: var(--secondary-font);
+  font-size: 2.6rem;
+  color: var(--primary-color);
+}
+.price sup {
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: var(--text-color);
+}
+
+/* Button */
+.add__cart {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.4rem;
+
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  color: var(--contrast-color);
+  border: 0;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  transition: background-color .1s ease-in;
+}
+.add__cart:hover {
+  background-color: var(--primary-color-dark);
+}
+.add__cart span {
+  margin-left: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card__image {
+    height: 250px;
+  }
+}
