@@ -66,16 +66,19 @@ figure {
   font-size: 1.2rem;
 }
 .card__info h1{
+  margin-block: 2rem;
+
   font-size: 3.2rem;
   font-family: var(--secondary-font);
+  line-height: 3rem;
   color: var(--text-color-dark);
 }
 .card__info .info__desc {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 2.4rem;
 }
 .card__info .price {
-  margin: 2rem;
+  margin-block: 2rem 3rem;
   font-family: var(--secondary-font);
   font-size: 3.2rem;
   color: var(--primary-color);
