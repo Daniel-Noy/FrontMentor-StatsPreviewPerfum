@@ -62,10 +62,17 @@ figure {
 }
 .card__info .product__type {
   text-transform: uppercase;
+<<<<<<< HEAD
   letter-spacing: .6rem;
   font-size: 1.2rem;
 }
 .card__info h1{
+=======
+  letter-spacing: .8rem;
+  font-size: 1.2rem;
+}
+.card__info h2{
+>>>>>>> fde223f55dded71e80785ab07fd2ea7ba78fea97
   font-size: 3.2rem;
   font-family: var(--secondary-font);
   color: var(--text-color-dark);
